@@ -57,7 +57,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
     
 5 - Same procedure for the test data (for the test data set we have 7 people performing) and the activity 
     related to the test data set.
-    
+
 6.  Binding rows train and test into a main data set called 'pdata'
 
 7.  Using chaining methods with gather and separate functions from tidyr and dplyr to create a tidy dataset
@@ -65,5 +65,5 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
 8.  Using chaining commands with selec, group_by, summarize, and arrange to create second tidy dataset to be
     written with write.table.
 
-    Note: Files to be written with write.table are called secondds.csv and secondds.txt
+   Note: Files to be written with write.table are called secondds.csv and secondds.txt
 
