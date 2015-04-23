@@ -26,12 +26,12 @@ A.  Creates an R Script called run_analysis.R that should do the following:
     
     Note: The script run_analysis.R must create two tidy data sets. One of them must be uploaded 
           to the repo and it will be generated in step 5 as described above.
-          
+
 B.  A link to a Github repository with the script for performing the analysis
 
 C.  A Code Book that describes the variables, the data and any transformations or work performed to
     clean up the data.
-    
+
 D.  A ReadMe.md file (the one you are reading now) describing all steps in the run_analysis script and
     related and necessary information for your peer reviewers.
 
@@ -44,7 +44,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
 2 - Data downloading from the site: 
     "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     as per instructions given by the instructors.
-    
+
 3 - Selection of columns related to 'average' mean() and 'standard dev' std() values from the features.txt 
     file. The file features.txt has 561 columns with a huge number of variables. We decided to strictly 
     only select columns that ended up in 'mean()' and 'std()'. In addition to these group we included 
@@ -54,7 +54,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
 4 - Creation of the train data set along with the subject (for the training data set we have 23 people performing) 
     and the activity ("standing", "sitting", "laying", "walking", "walking_downstairs", "walking_upstairs") 
     related to the training data set.
-    
+
 5 - Same procedure for the test data (for the test data set we have 7 people performing) and the activity 
     related to the test data set.
 
