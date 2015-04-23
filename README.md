@@ -24,8 +24,8 @@ A.  Creates an R Script called run_analysis.R that should do the following:
     5.  From the data set in step 4, creates a second, independent tidy data set with the average 
         of each variable for each activity and each subject.
     
-    Note: The script run_analysis.R must create two tidy data sets. One of them must be uploaded to the 
-          repo and it will be generated in step 5 as described above.
+    Note: The script run_analysis.R must create two tidy data sets. One of them must be uploaded 
+          to the repo and it will be generated in step 5 as described above.
           
 B.  A link to a Github repository with the script for performing the analysis
 
