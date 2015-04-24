@@ -16,3 +16,6 @@
  8   time-body-acc-std-z
  9   time-gravity-acc-mean-x
 10   time-gravity-acc-mean-y
+
+magnitude = \sqrt{X^{2}+Y^{2}+Z^{2}}
+
