@@ -73,8 +73,4 @@
 ```R
 x <- 'This R language rocks!!!'
 print(x)
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 113575d2aac858f8f7a64a9712334ba62b76076c
