@@ -1,7 +1,9 @@
 
 Note: The following Data Book describes the variables used before doing the data tidying process.
 
-
+|  No  |   Attribute    |    Description       |   Units      |
+| -----|:---------------|:--------------------:|-------------:|
+|   02 |  subject       |                      |              |
 
 
 ```R
