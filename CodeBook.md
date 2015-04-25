@@ -63,7 +63,7 @@ Note: The following Data Book describes the final set of variables AFTER perform
 |  03  |  domain        |  Attribute denotes where the processing of data will be based on  |  categorical  |  'time', 'frequency' |
 |  04  |  type          |  Indicates wheather measurement is attached to accelerometer or gyroscope |  categorical |  'accelerometer', 'gyroscope'  |
 |  05  |  signal        |  Indicates type of signal obtained after processing with filters  |  categorical |  'linear acceleration', 'jerk signal linear accel', 'jerk signal ang veloc', 'angular velocity'  |
-|  06  |  stat          |  Standard deviation X-axis body linear acceleration on time dimension  |  real-valued |  numeric  |
+|  06  |  stat          |  Type of statistical component: mean average and standard deviation  |  categorical  |  'mean', 'stdev'  |
 |  07  |  component     |  Vectorial component in the direction of X, Y, Z   |  categorical  |  'X', 'Y', 'Z'  |
 |  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
 
