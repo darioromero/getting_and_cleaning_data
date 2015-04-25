@@ -4,7 +4,7 @@ Note: The following Data Book describes the variables used before doing the data
 |  No  |   Attribute    |    Description       |   Units      |
 | -----|:---------------|:--------------------:|-------------:|
 |  1  |  subject       |  Person performing activity | denoted as number [1:30] |
-|  2  |  activity      |  Activity performed by subject | walking, walking upstairs, walking downstairs, sitting,  standing, laying  |
+|  2  |  activity      |  Activity performed by subject | 'walking', 'walking_upstairs', 'walking_downstairs', 'sitting',  'standing', 'laying' |
 |  3  |  time-body-acc-mean-x  |   Mean X-axis body linear acceleration on time dimension |  numeric  |
 |  4  |  time-body-acc-mean-y  |   Mean Y-axis body linear acceleration on time dimension |  numeric  |
 |  5  |  time-body-acc-mean-z  |   Mean Z-axis body linear acceleration on time dimension |  numeric  |
