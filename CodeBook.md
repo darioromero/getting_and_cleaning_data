@@ -1,4 +1,6 @@
-Note: The following Data Book describes the selected variables BEFORE making tidy the input data.
+# Data Book
+
+>Note: The following Data Book describes the selected variables BEFORE making tidy the input data. See also table after this one.
 
 |  No  |   Attribute    |    Description       |   Data Type   |   Values   |
 | -----|:---------------|:--------------------:| ------------- | ------------------- |
@@ -34,27 +36,28 @@ Note: The following Data Book describes the selected variables BEFORE making tid
 | 30  |  time-body-gyrojerk-std-x |   Standard deviation X-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
 | 31  |  time-body-gyrojerk-std-y |   Standard deviation Y-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
 | 32  |  time-body-gyrojerk-std-z |   Standard deviation Z-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
-| 43  |  frequency-body-acc-mean-x              |   Mean X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 44  |  frequency-body-acc-mean-y              |   Mean Y-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 45  |  frequency-body-acc-mean-z              |   Mean Z-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 46  |  frequency-body-acc-std-x               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 47  |  frequency-body-acc-std-y               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 48  |  frequency-body-acc-std-z               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 49  |  frequency-body-accjerk-mean-x          |   Mean X-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 50  |  frequency-body-accjerk-mean-y          |   Mean Y-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 51  |  frequency-body-accjerk-mean-z          |   Mean Z-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 52  |  frequency-body-accjerk-std-x           |   Standard Deviation X-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 53  |  frequency-body-accjerk-std-y           |   Standard Deviation Y-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 54  |  frequency-body-accjerk-std-z           |   Standard Deviation Z-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 55  |  frequency-body-gyro-mean-x             |   Mean X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 56  |  frequency-body-gyro-mean-y             |   Mean Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 57  |  frequency-body-gyro-mean-z             |   Mean Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 58  |  frequency-body-gyro-std-x              |   Standard deviation X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 59  |  frequency-body-gyro-std-y              |   Standard deviation Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 60  |  frequency-body-gyro-std-z              |   Standard deviation Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 33  |  frequency-body-acc-mean-x              |   Mean X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 34  |  frequency-body-acc-mean-y              |   Mean Y-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 35  |  frequency-body-acc-mean-z              |   Mean Z-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 36  |  frequency-body-acc-std-x               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 37  |  frequency-body-acc-std-y               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 38  |  frequency-body-acc-std-z               |   Standard deviation X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 39  |  frequency-body-accjerk-mean-x          |   Mean X-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 40  |  frequency-body-accjerk-mean-y          |   Mean Y-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 41  |  frequency-body-accjerk-mean-z          |   Mean Z-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 42  |  frequency-body-accjerk-std-x           |   Standard Deviation X-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 43  |  frequency-body-accjerk-std-y           |   Standard Deviation Y-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 44  |  frequency-body-accjerk-std-z           |   Standard Deviation Z-axis Jerk signal linear acceleration on frequency dimension  |  real-valued |  numeric  |
+| 45  |  frequency-body-gyro-mean-x             |   Mean X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 46  |  frequency-body-gyro-mean-y             |   Mean Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 47  |  frequency-body-gyro-mean-z             |   Mean Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 48  |  frequency-body-gyro-std-x              |   Standard deviation X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 49  |  frequency-body-gyro-std-y              |   Standard deviation Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
+| 50  |  frequency-body-gyro-std-z              |   Standard deviation Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
 
+***
 
-Note: The following Data Book describes the final set of variables AFTER making data tidy.
+>Note: The following Data Book describes the final set of variables AFTER making data tidy.
 
 |  No  |   Attribute    |    Description       |   Data Type   |   Values   |
 | -----|:---------------|:--------------------:| ------------- | ------------------- |
@@ -67,3 +70,7 @@ Note: The following Data Book describes the final set of variables AFTER making 
 |  07  |  component     |  Vectorial component in the direction of X, Y, Z   |  categorical  |  'X', 'Y', 'Z'  |
 |  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
 
+```R
+x <- 'This R language rock!!!'
+print(x)
+```
