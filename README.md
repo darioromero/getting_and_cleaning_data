@@ -63,8 +63,8 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
     considered mean()-X/Y/Z and std()-X/Y/Z for this project.
     
     Here below a schematic of the logic I followed to identify main attributes of the sample data:
-    
-    ![analysis](darioromero.github.com/getting_and_cleaning_data/images/analysis-tree.png
+
+![analysis](/images/analysis-tree.png)
 
 4 - Creation of the train data set along with the subject (for the training data set we have 21 people performing) 
     and the activity ("standing", "sitting", "laying", "walking", "walking_downstairs", "walking_upstairs") 
