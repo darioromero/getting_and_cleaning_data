@@ -42,7 +42,7 @@ D.  A ReadMe.md file (the one you are reading now) describing all steps in the r
   2. This run_analysis.R script makes a download from the website of the required data to proceed with
      all necessary calculations.
 
-** Description of run_analysis.R
+h2 Description of run_analysis.R
 
 R Script run_analysis.R (detailed description)
 The script to create tidy data can be disglosed as to have 8 main chunks of tasks as described below:
