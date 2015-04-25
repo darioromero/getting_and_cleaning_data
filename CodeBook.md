@@ -1,7 +1,7 @@
 
 Note: The following Data Book describes the variables used before doing the data tidying process.
 
-|  No  |   Attribute    |    Description       |   Units      |
+|  No  |   Attribute    |    Description       |   Units / Factors     |
 | -----|:---------------|:--------------------:|-------------:|
 |  1  |  subject       |  Person performing activity | denoted as number [1:30] |
 |  2  |  activity      |  Activity performed by subject | 'walking', 'walking_upstairs', 'walking_downstairs', 'sitting',  'standing', 'laying' |
