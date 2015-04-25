@@ -62,7 +62,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
     later on using the Euclidean formula to calculate magnitude of the vector. So in summary, only has been
     considered mean()-X/Y/Z and std()-X/Y/Z for this project.
     
-    Here below a show a schematic of the logic I folowed to identify main attributes of the sample data:
+    Here below a schematic of the logic I followed to identify main attributes of the sample data:
     
     https://github.com/darioromero/getting_and_cleaning_data/analysis-tree.png
 
