@@ -71,6 +71,6 @@
 |  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
 
 ```R
-x <- 'This R language rock!!!'
+x <- 'This R language rocks!!!'
 print(x)
 ```
