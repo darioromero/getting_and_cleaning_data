@@ -1,5 +1,5 @@
 # 
-# Getting and Cleaning Data - Final Project - 2015-04-23
+# Getting and Cleaning Data - Final Project - 2015-04-25
 # 
 One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, 
 Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked 
@@ -34,6 +34,15 @@ C.  A Code Book that describes the variables, the data and any transformations o
 
 D.  A ReadMe.md file (the one you are reading now) describing all steps in the run_analysis script and
     related and necessary information for your peer reviewers.
+
+> Note: 
+  1. Before running run_analysis.R script you must have permission for writing on the folder where
+     you will save the script. As we all know, the script must create a txt file at the end of the
+     analysis with the average per activity and per subject (person).
+  2. This run_analysis.R script makes a download from the website of the required data to proceed with
+     all necessary calculations.
+
+** Description of run_analysis.R
 
 R Script run_analysis.R (detailed description)
 The script to create tidy data can be disglosed as to have 8 main chunks of tasks as described below:
