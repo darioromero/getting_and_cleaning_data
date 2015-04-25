@@ -1,6 +1,6 @@
 suppressMessages(library(tidyr))
 suppressMessages(library(dplyr))
-suppressMessages(library(stringr))
+suppressMessages(library(stringr)) 
 
 # save current working directory
 currdir = getwd()
@@ -166,3 +166,4 @@ write.table(second, file = paste(currdir, "/", "secondds.txt", sep = ""),
 #write.csv(second, file = paste(currdir, "/", "secondds.csv", sep = ""))
 
 setwd(currdir)
+ 
