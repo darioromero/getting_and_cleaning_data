@@ -1,3 +1,20 @@
+
+
+Note: The following Data Book describes the final set of variables AFTER performing data tidying process.
+      See description after this for variables selected BEFORE tidying the input data.
+
+|  No  |   Attribute    |    Description       |   Data Type   |   Values   |
+| -----|:---------------|:--------------------:| ------------- | ------------------- |
+|  01  |  subject       |  Person performing activity |  ordinal   |  integer [1:30] |
+|  02  |  activity      |  Activity performed by subject |  categorical  |  'walking', 'walking_upstairs', 'walking_downstairs', 'sitting',  'standing', 'laying' |
+|  03  |  domain        |  Attribute denotes where the processing of data will be based on  |  categorical  |  'time', 'frequency' |
+|  04  |  type          |  Indicates wheather measurement is attached to accelerometer or gyroscope |  categorical |  'accelerometer', 'gyroscope'  |
+|  05  |  signal        |  Indicates type of signal obtained after processing with filters  |  categorical |  'linear acceleration', 'jerk signal linear accel', 'jerk signal ang veloc', 'angular velocity'  |
+|  06  |  stat          |  Type of statistical component: mean average and standard deviation  |  categorical  |  'mean', 'stdev'  |
+|  07  |  component     |  Vectorial component in the direction of X, Y, Z   |  categorical  |  'X', 'Y', 'Z'  |
+|  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
+
+
 Note: The following Data Book describes the selected variables BEFORE doing the data tidying process.
 
 |  No  |   Attribute    |    Description       |   Data Type   |   Values   |
@@ -52,18 +69,4 @@ Note: The following Data Book describes the selected variables BEFORE doing the 
 | 58  |  frequency-body-gyro-std-x              |   Standard deviation X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
 | 59  |  frequency-body-gyro-std-y              |   Standard deviation Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
 | 60  |  frequency-body-gyro-std-z              |   Standard deviation Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-
-
-Note: The following Data Book describes the final set of variables AFTER performing data tidying process.
-
-|  No  |   Attribute    |    Description       |   Data Type   |   Values   |
-| -----|:---------------|:--------------------:| ------------- | ------------------- |
-|  01  |  subject       |  Person performing activity |  ordinal   |  integer [1:30] |
-|  02  |  activity      |  Activity performed by subject |  categorical  |  'walking', 'walking_upstairs', 'walking_downstairs', 'sitting',  'standing', 'laying' |
-|  03  |  domain        |  Attribute denotes where the processing of data will be based on  |  categorical  |  'time', 'frequency' |
-|  04  |  type          |  Indicates wheather measurement is attached to accelerometer or gyroscope |  categorical |  'accelerometer', 'gyroscope'  |
-|  05  |  signal        |  Indicates type of signal obtained after processing with filters  |  categorical |  'linear acceleration', 'jerk signal linear accel', 'jerk signal ang veloc', 'angular velocity'  |
-|  06  |  stat          |  Type of statistical component: mean average and standard deviation  |  categorical  |  'mean', 'stdev'  |
-|  07  |  component     |  Vectorial component in the direction of X, Y, Z   |  categorical  |  'X', 'Y', 'Z'  |
-|  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
 
