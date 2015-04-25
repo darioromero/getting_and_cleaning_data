@@ -1,4 +1,4 @@
-Note: The following Data Book describes the selected variables for mean and standard deviation before doing the data tidying process.
+Note: The following Data Book describes the selected variables BEFORE doing the data tidying process.
 
 |  No  |   Attribute    |    Description       |   Data Type   |   Values   |
 | -----|:---------------|:--------------------:| ------------- | ------------------- |
@@ -34,16 +34,6 @@ Note: The following Data Book describes the selected variables for mean and stan
 | 30  |  time-body-gyrojerk-std-x |   Standard deviation X-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
 | 31  |  time-body-gyrojerk-std-y |   Standard deviation Y-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
 | 32  |  time-body-gyrojerk-std-z |   Standard deviation Z-axis body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
-| 33  |  time-body-acc-mean-mag  |   Mean scalar magnitude body linear acceleration on time dimension  |  real-valued |  numeric  |
-| 34  |  time-body-acc-std-mag |   Standard deviation scalar magnitude body linear acceleration on time dimension  |  real-valued |  numeric  |
-| 35  |  time-gravity-acc-mean-mag  |   Mean scalar magnitude gravity accelleration on time dimension  |  real-valued |  numeric  |
-| 36  |  time-gravity-acc-std-mag |   Standard deviation scalar magnitude gravity accelleration on time dimension  |  real-valued |  numeric  |
-| 37  |  time-body-accjerk-mean-mag |   Mean scalar magnitude Jerk signal linear acceleration on time dimension  |  real-valued |  numeric  |
-| 38  |  time-body-accjerk-std-mag  |   Standard deviation scalar magnitude Jerk signal linear acceleration on time dimension  |  real-valued |  numeric  |
-| 39  |  time-body-gyro-mean-mag  |   Mean scalar magnitude body angular velocity on time dimension  |  real-valued |  numeric  |
-| 40  |  time-body-gyro-std-mag  |   Standard deviation scalar magnitude body angular velocity on time dimension  |  real-valued |  numeric  |
-| 41  |  time-body-gyrojerk-mean-mag |   Mean scalar magnitude body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
-| 42  |  time-body-gyrojerk-std-mag |   Standard deviation scalar magnitude body angular velocity jerk signal on time dimension  |  real-valued |  numeric  |
 | 43  |  frequency-body-acc-mean-x              |   Mean X-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
 | 44  |  frequency-body-acc-mean-y              |   Mean Y-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
 | 45  |  frequency-body-acc-mean-z              |   Mean Z-axis body linear acceleration on frequency dimension  |  real-valued |  numeric  |
@@ -62,11 +52,18 @@ Note: The following Data Book describes the selected variables for mean and stan
 | 58  |  frequency-body-gyro-std-x              |   Standard deviation X-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
 | 59  |  frequency-body-gyro-std-y              |   Standard deviation Y-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
 | 60  |  frequency-body-gyro-std-z              |   Standard deviation Z-axis body angular velocity on frequency dimension  |  real-valued |  numeric  |
-| 61  |  frequency-body-acc-mean-mag            |  Mean scalar magnitude body linear acceleration on frequency dimension|  numeric  |
-| 62  |  frequency-body-acc-std-mag             |   Standard deviation scalar magnitude body linear acceleration on frequency dimension  |  real-valued |  numeric  |
-| 63  |  frequency-body-bodyaccjerk-mean-mag    |  Mean scalar magnitude body linear acceleration Jerk signal on frequency dimension|  numeric  |
-| 64  |  frequency-body-bodyaccjerk-std-mag     |  Standard deviation scalar magnitude body linear acceleration Jerk signal on frequency dimension|  numeric  |
-| 65  |  frequency-body-bodygyro-mean-mag       |  Mean scalar magnitude body angular velocity on frequency dimension|  numeric  |
-| 66  |  frequency-body-bodygyro-std-mag        |  Standard deviation scalar magnitude body angular velocity on frequency dimension|  numeric  |
-| 67  |  frequency-body-bodygyrojerk-mean-mag   |  Mean scalar magnitude body angular velocity Jerk signal on frequency dimension|  numeric  |
-| 68  |  frequency-body-bodygyrojerk-std-mag    |  Standard deviation scalar magnitude body angular velocity Jerk signal on frequency dimension|  numeric  |
+
+
+Note: The following Data Book describes the final set of variables AFTER performing data tidying process.
+
+|  No  |   Attribute    |    Description       |   Data Type   |   Values   |
+| -----|:---------------|:--------------------:| ------------- | ------------------- |
+|  01  |  subject       |  Person performing activity |  ordinal   |  integer [1:30] |
+|  02  |  activity      |  Activity performed by subject |  categorical  |  'walking', 'walking_upstairs', 'walking_downstairs', 'sitting',  'standing', 'laying' |
+|  03  |  domain        |  Attribute denotes where the processing of data will be based on  |  categorical  |  'time', 'frequency' |
+|  04  |  type          |  Indicates wheather measurement is attached to accelerometer or gyroscope |  categorical |  'accelerometer', 'gyroscope'  |
+|  05  |  signal        |  Indicates type of signal obtained after processing with filters  |  categorical |  'linear acceleration', 'jerk signal linear accel', 'jerk signal ang veloc', 'angular velocity'  |
+|  06  |  stat          |  Standard deviation X-axis body linear acceleration on time dimension  |  real-valued |  numeric  |
+|  07  |  component     |  Vectorial component in the direction of X, Y, Z   |  categorical  |  'X', 'Y', 'Z'  |
+|  08  |  average       |  Value of the statistical component: mean() or standard deviation() |  real-valued  |  numeric   |
+
