@@ -64,7 +64,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
     
     Here below a show a schematic of the logic I folowed to identify main attributes of the sample data:
     
-    ![Schematic of Problem Domain](analysis-tree.png)
+    https://github.com/darioromero/getting_and_cleaning_data/analysis-tree.png
 
 4 - Creation of the train data set along with the subject (for the training data set we have 21 people performing) 
     and the activity ("standing", "sitting", "laying", "walking", "walking_downstairs", "walking_upstairs") 
