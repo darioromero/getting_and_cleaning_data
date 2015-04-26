@@ -37,40 +37,43 @@ D.  A ReadMe.md file (the one you are reading now) describing all steps in the r
     related and necessary information for your peer reviewers.
 
 > Note: 
-  1. Before running run_analysis.R script you must have permission for writing on the folder where
-     you will save the script. As we all know, the script must create a txt file at the end of the
-     analysis with the average per activity and per subject (person).
-  2. This run_analysis.R script makes a download from the website of the required data to proceed with
+  1. Before running the run_analysis.R script you must have permission to writing on the folder where
+     you will be running the script. As we all know, the script must create a txt file at the end of the
+     analysis with the average per subject and activity.
+  2. This run_analysis.R script do a download from the website of the required data to proceed with
      all necessary calculations.
+     The data is downloaded from: 
+     "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 ## Description of run_analysis.R
 
 R Script run_analysis.R (detailed description)
-The script to create tidy data can be disglosed as to have 8 main chunks of tasks as described below:
 
-1 - Data folder creation for saving files related to the project: folder 'data' that is created under
-    the current working directory in R.
+The script to create tidy data can be disglosed as to having 8 main tasks as described below:
+
+1 - Data folder creation for saving files related to the project: The run_analysis.R script creates a 
+    folder called 'data' under the current working directory where the script is running.
 
 2 - Data downloading from the site: 
     "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     as per instructions given by the instructors.
 
-3 - Selection of columns related to 'average' mean() and 'standard dev' std() values from the features.txt 
+3 - Selection of columns related to 'average' mean() and 'standard dev' std() from the features.txt 
     file. The file features.txt has 561 columns with a huge number of variables. We decided to strictly 
-    only select columns that ended up in 'mean()' and 'std()' and belonging to a vector. 
-    So, having said that, I decided to NOT consider attributes related to magnitude, as those can be obtained
-    later on using the Euclidean formula to calculate magnitude of the vector. So in summary, only has been
-    considered mean()-X/Y/Z and std()-X/Y/Z for this project.
+    only select columns those ending up in 'mean()' and 'std()' and having a X,Y,Z component. 
+    So, having said that, I decided to do NOT consider attributes related to magnitude, as those can be 
+    calculated later on using the Euclidean formula. So for this project I have only considered
+    considered mean()-X/Y/Z and std()-X/Y/Z.
     
     Here below a schematic of the logic I followed to identify main attributes of the sample data:
 
 ![analysis](/images/analysis-tree.png)
 
-4 - Creation of the train data set along with the subject (for the training data set we have 21 people performing) 
-    and the activity ("standing", "sitting", "laying", "walking", "walking_downstairs", "walking_upstairs") 
-    related to the training data set.
+4 - Creation of the train data set along with the subject (for the training data set we have 21 people 
+    performing) and the activity ("standing", "sitting", "laying", "walking", "walking_downstairs",
+    "walking_upstairs") related to the training data set.
 
-5 - Same procedure for the test data (for the test data set we have 9 people performing) and the activity 
+5 - Same procedure for the test data (for the test data we have 9 people performing) and the activity 
     related to the test data set.
 
 6 - Binding rows train and test into a main data set called 'pdata'.
@@ -79,5 +82,7 @@ The script to create tidy data can be disglosed as to have 8 main chunks of task
 
 8 - Using chaining commands with selec, group_by, summarize, and arrange to create second tidy dataset to 
     be written with write.table.
+    This second data set will contain average of all statistical variables mean() and stdev() grouped by
+    person and activity.
 
 Note: File to be written with write.table is called secondds.txt (for second dataset)
